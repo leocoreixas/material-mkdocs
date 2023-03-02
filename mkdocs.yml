@@ -1,4 +1,4 @@
-site_name: API consulta Alfândega
+site_name: API consulta EasyTrade
 theme:
   name: material
   language: pt-BR
@@ -28,8 +28,9 @@ nav:
       - Tipagem e formatação: documentation/typesFormat.md
       - Códigos de retorno: documentation/returnCode.md
     - Consultar APIs:
-      - EasyTrade Customs: apis/easytradeCustoms.md
+      - EasyTrade : apis/easytrade.md
       - Associate: apis/associate.md
+      - Company: apis/company.md
     - Suporte:
       - Contato: contact/support.md
 plugins:

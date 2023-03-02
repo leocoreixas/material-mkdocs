@@ -4,9 +4,9 @@
 ![](./assets/Vector-1.png)
 
 
-## <b>Como funciona a API de consulta da Alfândega?</b>
+## <b>Como funciona a API de consulta da EasyTrade?</b>
 
-O serviço Consulta da Alfândega é disponibilizado através do HTTP REST. 
+O serviço Consulta da EasyTrade é disponibilizado através do HTTP REST. 
 Integrar seus sistemas diretamente à consultas no Easytrade e automatiza consultas e 
 checagens de informações sobre as Informações de Empresas e serviços da plataforma.
 

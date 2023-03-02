@@ -63,7 +63,7 @@ Exemplo de resposta esperada:
 De posse do Token de Acesso, faça a requisição a API.
 ```
 
-curl -X GET "https://api.dev.casaarabe.org.br/ellos/associate/api/Exportation/details"\
+curl -X GET "https://api.dev.casaarabe.org.br/ellos/easytrade-exportation/api/Exportation/details/145292508cc6c1b4347fe05cdc4a36bc98025cec532a8e5c24fe46de057c2b56"\
 -H "accept: application/json" \
 -H "Authorization: Bearer eyJraWQiOiI4aTV5cndFMVlreGc4M0FWXC9MTWFacHk0b0J0TEJ6a01yN21" \
 
@@ -77,130 +77,246 @@ Informamos o tipo de dados que estamos requerendo, nesse caso JSON
 - [HEADER] Authorization: Bearer eyJraWQiOiI4aTV5cndFMVlreGc4M0FWXC9MTWFacHk0b0J0TEJ6a01yN21
 Informamos o token de acesso recebido
 
-- [GET] https://api.dev.casaarabe.org.br/ellos/easytrade-customs/api/Exportation/details
+- [GET] https://api.dev.casaarabe.org.br/ellos/easytrade-exportation/api/Exportation/details/145292508cc6c1b4347fe05cdc4a36bc98025cec532a8e5c24fe46de057c2b56
 
 Chamamos a url da API e o método desejado. No caso, a url base é
- "https://api.dev.casaarabe.org.br/ellos/easytrade-customs/api/”, e o método é o 
- "Exportation/details?idCompany=147&idExportation=edb65905c98da3cd5f55d0c251ec582254ecd353a0a257aec2b33e6f384b5b28".
+ "https://api.dev.casaarabe.org.br/ellos/easytrade/api/”, e o método é o 
+ "Exportation/details/145292508cc6c1b4347fe05cdc4a36bc98025cec532a8e5c24fe46de057c2b56".
 
  Exemplo de resposta esperada:
 
 ```
 {
-"success": true,
-"data": {
-"exportation": {
-    "id": "edb65905c98da3cd5f55d0c251ec582254ecd353a0a257aec2b33e6f384b5b28",
-    "date": "2023-02-23T23:52:17.207Z",
-    "status": "ACCEPTED",
-    "rejectMessage": null
-},
-"incoterm": {
-    "incotermType": "CIF",
-    "cost": 255.55,
-    "freightCost": 5555.5,
-    "insurance": 555.5,
-    "landingFee": 555550,
-    "others": 55550
-},
-"exporter": {
-    "idEllos": 433,
-    "name": "Denilson OP",
-    "city": "Rio de janeiro",
-    "state": "RJ",
-    "address": "Av. Rio Branco",
-    "complement": "Em frente ao MASP",
-    "zipCode": "20090-000",
-    "poBox": "po-box134",
-    "district": "Barra da Tijuca"
-},
-"importer": {
-    "idEllos": 2030,
-    "name": "Teste task 1551",
-    "city": "teste",
-    "state": "",
-    "address": "rua do teste",
-    "complement": "teste",
-    "zipCode": "",
-    "poBox": "101010",
-    "district": ""
-},
-"buyer": {
-    "idEllos": 2030,
-    "name": "Teste task 1551",
-    "city": "teste",
-    "state": "",
-    "address": "rua do teste",
-    "complement": "teste",
-    "zipCode": "",
-    "poBox": "101010",
-    "district": ""
-},
-"consignee": {
-    "idEllos": 2030,
-    "name": "Teste task 1551",
-    "city": "teste",
-    "state": "",
-    "address": "rua do teste",
-    "complement": "teste",
-    "zipCode": "",
-    "poBox": "101010",
-    "district": ""
-},
-"shipment": {
-    "shipmentType": "PLANE",
-    "blAwb": "3434",
-    "shipmentDate": "2023-02-09T00:00:00-03:00",
-    "imo": 3434
-},
-"products": [
-    {
-    "ncm": {
-        "id": 13711,
-        "ncmCode": "97051000",
-        "description": "Collections and collection pieces that present an archaeological, ethnographic or historical interest"
+    "success": true,
+    "data": {
+        "exportation": {
+            "id": "145292508cc6c1b4347fe05cdc4a36bc98025cec532a8e5c24fe46de057c2b56",
+            "idReference": "75D09A6D507DD4DA509DF34F671608B4",
+            "date": "2023-03-02T13:36:16.936Z",
+            "status": "PENDING_CERTIFIERS",
+            "rejectMessage": null,
+            "consularApproval": false,
+            "physicalSealing": false,
+            "processStatus": null
+        },
+        "incoterm": {
+            "incotermType": "CIF",
+            "cost": 600000.0,
+            "freightCost": 600000.0,
+            "insurance": 600000.0,
+            "landingFee": 600000.0,
+            "others": 6000000.0,
+            "processStatus": null
+        },
+        "exporter": {
+            "idEllos": 1,
+            "name": "BRF Foods LTDA",
+            "city": "SÃO PAULO ",
+            "state": "SP",
+            "address": "AV. PAULISTA 3",
+            "complement": "Em frente ao MASP",
+            "zipCode": "01311-000",
+            "poBox": "po-box134",
+            "district": "CERQUEIRA CESAR 2",
+            "processStatus": null
+        },
+        "importer": {
+            "idEllos": 1018,
+            "name": "Mark Fish Foods",
+            "city": "MAHAR",
+            "state": "",
+            "address": "SIR TAKOL MIJAR, 154",
+            "complement": "District JORONH",
+            "zipCode": "",
+            "poBox": "16451",
+            "district": "",
+            "processStatus": null
+        },
+        "buyer": {
+            "idEllos": 1018,
+            "name": "Mark Fish Foods",
+            "city": "MAHAR",
+            "state": "",
+            "address": "SIR TAKOL MIJAR, 154",
+            "complement": "District JORONH",
+            "zipCode": "",
+            "poBox": "16451",
+            "district": "",
+            "processStatus": null
+        },
+        "consignee": {
+            "idEllos": 1018,
+            "name": "Mark Fish Foods",
+            "city": "MAHAR",
+            "state": "",
+            "address": "SIR TAKOL MIJAR, 154",
+            "complement": "District JORONH",
+            "zipCode": "",
+            "poBox": "16451",
+            "district": "",
+            "processStatus": null
+        },
+        "shipment": {
+            "shipmentType": "PLANE",
+            "blAwb": "15151515",
+            "shipmentDate": "2023-03-02T03:00:00+00:00",
+            "imo": 0.0,
+            "processStatus": null
+        },
+        "products": [
+            {
+                "ncm": {
+                    "id": 81,
+                    "ncmCode": "02032900",
+                    "description": "Other swine meat, frozen"
+                },
+                "unitMeasure": {
+                    "id": 12,
+                    "code": "BAL",
+                    "description": "Bales"
+                },
+                "unitMeasureWeight": {
+                    "id": 39,
+                    "code": "MT",
+                    "description": "Metric Tonne"
+                },
+                "quantity": 151515151,
+                "grossWeight": 151515.1515,
+                "netWeight": 15.1515,
+                "marksAndNumbers": "",
+                "sif": 15151515.0,
+                "manufactoringDate": "2023-03-02T03:00:00.000Z",
+                "expirationDate": "2023-03-31T03:00:00.000Z",
+                "description": "Other swine meat, frozen",
+                "productValue": 15151515.15,
+                "processStatus": null
+            }
+        ],
+        "stopPoints": [
+            {
+                "id": 1,
+                "code": "ATL",
+                "name": "Hartsfield Jackson Atlanta Intl",
+                "processStatus": null
+            },
+            {
+                "id": 2,
+                "code": "ORD",
+                "name": "Chicago Ohare Intl",
+                "processStatus": null
+            }
+        ],
+        "invoice": {
+            "idInvoice": "15478858",
+            "totalWeight": 55555.5555,
+            "totalValue": 55555.55,
+            "emissionDate": "2023-03-02T03:00:00+00:00",
+            "destinationCountryCode": "JOR",
+            "originCountryCode": "BRA",
+            "certifiedLanguage": "2",
+            "email": "teste@teste.com.br",
+            "comments": "teste",
+            "processStatus": null,
+            "numberOfCopies": {
+                "consularApproval": 0,
+                "physicalSealing": 1,
+                "processStatus": null
+            },
+            "numberOfPages": 1
+        },
+        "certificates": [
+            {
+                "id": 1,
+                "number": "",
+                "uid": "68e30c2e-14c3-488f-89f4-ac0cf1c574c0",
+                "rejectMessage": null,
+                "name": "Health Certificate",
+                "code": "health",
+                "filePath": "https://ellos-exportation-docs.s3.amazonaws.com/75D09A6D507DD4DA509DF34F671608B4/cert_health_15478858_v1.pdf",
+                "status": "PENDING",
+                "numberOfCopies": {
+                    "consularApproval": 0,
+                    "physicalSealing": 1,
+                    "processStatus": null
+                },
+                "certifier": null,
+                "certificateNeedsConsularApproval": false,
+                "numberOfPages": 1
+            },
+            {
+                "id": 3,
+                "number": "15478858",
+                "uid": "b852d839-deef-4c20-9f1e-e5fcdd2fde6d",
+                "rejectMessage": null,
+                "name": "Origin Certificate",
+                "code": "origin",
+                "filePath": "https://ellos-exportation-docs.s3.amazonaws.com/75D09A6D507DD4DA509DF34F671608B4/cert_origin_15478858_v1.pdf",
+                "status": "PENDING",
+                "numberOfCopies": {
+                    "consularApproval": 0,
+                    "physicalSealing": 1,
+                    "processStatus": null
+                },
+                "certifier": null,
+                "certificateNeedsConsularApproval": false,
+                "numberOfPages": 1
+            },
+            {
+                "id": 5,
+                "number": "",
+                "uid": "07067293-88d0-4cfb-b3ad-fbed5dfff22e",
+                "rejectMessage": null,
+                "name": "Proforma Invoice",
+                "code": "proformaInvoice",
+                "filePath": "https://ellos-exportation-docs.s3.amazonaws.com/75D09A6D507DD4DA509DF34F671608B4/cert_proformaInvoice_15478858_v1.pdf",
+                "status": "PENDING",
+                "numberOfCopies": {
+                    "consularApproval": 0,
+                    "physicalSealing": 1,
+                    "processStatus": null
+                },
+                "certifier": null,
+                "certificateNeedsConsularApproval": false,
+                "numberOfPages": 1
+            },
+            {
+                "id": 6,
+                "number": "",
+                "uid": "64f06c97-cb6d-4fee-888a-4368dfb38657",
+                "rejectMessage": null,
+                "name": "Packing List",
+                "code": "packingList",
+                "filePath": "https://ellos-exportation-docs.s3.amazonaws.com/75D09A6D507DD4DA509DF34F671608B4/cert_packingList_15478858_v1.pdf",
+                "status": "PENDING",
+                "numberOfCopies": {
+                    "consularApproval": 0,
+                    "physicalSealing": 1,
+                    "processStatus": null
+                },
+                "certifier": null,
+                "certificateNeedsConsularApproval": false,
+                "numberOfPages": 1
+            }
+        ],
+        "documents": [],
+        "stampedDoc": null,
+        "payment": {
+            "totalValue": 1600.0,
+            "valueDetails": [
+                {
+                    "name": "Despacho Easytrade",
+                    "value": 1600.0
+                }
+            ],
+            "paymentStatus": "REGISTRED",
+            "processStatus": null
+        },
+        "embassyPayment": null,
+        "consularApproval": false,
+        "needsPhysicalSealing": false,
+        "processStatus": null
     },
-    "unitMeasure": {
-        "id": 12,
-        "code": "BAL",
-        "description": "Bales"
-    },
-    "unitMeasureWeight": null,
-    "quantity": 34343,
-    "grossWeight": 34.3434,
-    "netWeight": 34.3434,
-    "marksAndNumbers": "343434",
-    "sif": 3434,
-    "manufactoringDate": "2023-02-09T03:00:00.000Z",
-    "expirationDate": "2023-02-22T03:00:00.000Z",
-    "description": "Collections and collection pieces that present an archaeological, ethnographic or historical interest"
-    }
-],
-"stopPoints": [
-    {
-    "code": "PEK",
-    "name": "Capital Intl"
-    },
-    {
-    "code": "LAX",
-    "name": "Los Angeles Intl"
-    }
-],
-"invoice": {
-    "idInvoice": "645645",
-    "totalWeight": 23.2323,
-    "totalValue": 54544.54,
-    "emissionDate": "2021-10-29T00:00:00-03:00",
-    "destinationCountryCode": "JOR",
-    "originCountryCode": "BRA",
-    "certifiedLanguage": "2",
-    "email": "esae@ese.v",
-    "comments": "kijij"
-},
-"certificates": [],
-"stampedDoc": null
-},
-"errors": null
+    "errors": null
 }
 ```
 

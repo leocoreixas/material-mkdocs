@@ -1,1 +1,1 @@
-<swagger-ui src="https://api.dev.casaarabe.org.br/ellos/easytrade-customs/swagger/v1/swagger.json"/>
+<swagger-ui src="https://api.dev.casaarabe.org.br/ellos/easytrade/swagger/v1/swagger.json"/>

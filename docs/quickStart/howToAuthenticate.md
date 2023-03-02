@@ -63,7 +63,7 @@ Exemplo de resposta esperada:
 De posse do Token de Acesso, faça a requisição a API.
 ```
 
-curl -X GET "https://api.dev.casaarabe.org.br/ellos/associate/api/Exportation/details"\
+curl -X GET "https://api.dev.casaarabe.org.br/ellos/easytrade-customs/api/Exportation/details"\
 -H "accept: application/json" \
 -H "Authorization: Bearer eyJraWQiOiI4aTV5cndFMVlreGc4M0FWXC9MTWFacHk0b0J0TEJ6a01yN21" \
 

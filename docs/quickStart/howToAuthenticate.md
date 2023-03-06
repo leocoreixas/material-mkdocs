@@ -63,7 +63,7 @@ Exemplo de resposta esperada:
 De posse do Token de Acesso, faça a requisição a API.
 ```
 
-curl -X GET "https://api.dev.casaarabe.org.br/ellos/easytrade-exportation/api/Exportation/details/145292508cc6c1b4347fe05cdc4a36bc98025cec532a8e5c24fe46de057c2b56"\
+curl -X GET "https://api.dev.casaarabe.org.br/ellos/easytrade-certifiers/api/Exportation/details/145292508cc6c1b4347fe05cdc4a36bc98025cec532a8e5c24fe46de057c2b56"\
 -H "accept: application/json" \
 -H "Authorization: Bearer eyJraWQiOiI4aTV5cndFMVlreGc4M0FWXC9MTWFacHk0b0J0TEJ6a01yN21" \
 
@@ -77,10 +77,10 @@ Informamos o tipo de dados que estamos requerendo, nesse caso JSON
 - [HEADER] Authorization: Bearer eyJraWQiOiI4aTV5cndFMVlreGc4M0FWXC9MTWFacHk0b0J0TEJ6a01yN21
 Informamos o token de acesso recebido
 
-- [GET] https://api.dev.casaarabe.org.br/ellos/easytrade-exportation/api/Exportation/details/145292508cc6c1b4347fe05cdc4a36bc98025cec532a8e5c24fe46de057c2b56
+- [GET] https://api.dev.casaarabe.org.br/ellos/easytrade-certifiers/api/Exportation/details/145292508cc6c1b4347fe05cdc4a36bc98025cec532a8e5c24fe46de057c2b56
 
 Chamamos a url da API e o método desejado. No caso, a url base é
- "https://api.dev.casaarabe.org.br/ellos/easytrade/api/”, e o método é o 
+ "https://api.dev.casaarabe.org.br/ellos/easytrade-certifiers/api/”, e o método é o 
  "Exportation/details/145292508cc6c1b4347fe05cdc4a36bc98025cec532a8e5c24fe46de057c2b56".
 
  Exemplo de resposta esperada:

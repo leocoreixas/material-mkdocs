@@ -4,9 +4,9 @@
 ![](./assets/Vector-1.png)
 
 
-## <b>Como funciona a API de consulta do EasyTrade?</b>
+## <b>Como funciona a API de consulta do Certificadores?</b>
 
-O serviço Consulta do EasyTrade é disponibilizado através do HTTP REST. 
+O serviço Consulta do Certificadores é disponibilizado através do HTTP REST. 
 Integrar seus sistemas diretamente à consultas no Easytrade e automatiza consultas e 
 checagens de informações sobre as Informações de Empresas e serviços da plataforma.
 

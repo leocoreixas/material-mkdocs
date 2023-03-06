@@ -1,4 +1,4 @@
-site_name: API consulta EasyTrade
+site_name: API consulta Certifcadores
 theme:
   name: material
   language: pt-BR
@@ -28,9 +28,8 @@ nav:
       - Tipagem e formatação: documentation/typesFormat.md
       - Códigos de retorno: documentation/returnCode.md
     - Consultar APIs:
-      - EasyTrade : apis/easytrade.md
+      - Certificadores : apis/certifiers.md
       - Associate: apis/associate.md
-      - Company: apis/company.md
     - Suporte:
       - Contato: contact/support.md
 plugins:
